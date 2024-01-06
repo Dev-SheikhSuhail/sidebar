@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: rgb(241, 245, 248);
+  background: rgb(40 48 55);
 }
 .sidebar-toggle-btn {
   font-size: 32px;
@@ -37,11 +37,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: rgba(139, 94, 94, 0.16);
-  visibility: hidden;
+  background: rgb(253 249 249 / 81%);
+  transition: all 0.3s linear;
+  transform: translate(-100%);
 }
 .show-sidebar {
-  visibility: visible;
+  transform: translate(0);
 }
 .sidebar-header {
   display: flex;
@@ -79,7 +80,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
-  width: inherit;
+  width: 100%;
   position: fixed;
   bottom: 0;
   padding-bottom: 8px;
